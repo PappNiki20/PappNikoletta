@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+   
+}
+body{
+    font-family: Arial, Verdana, sans-serif;
+    color: beige;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+    background-image: url(kepek/black.png);
+    width: 100%;
+}
+main{
+    background-color: rgb(126, 123, 123);
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "h"
+    "n"
+    "a"
+    "f";
+
+}
+header{
+    grid-area: h;
+}
+nav{
+    grid-area: n;
+}
+article{
+    color: black;
+    grid-area: a;
+}
+footer{
+    background-color: rgb(231, 165, 43);
+    text-align: center;
+    grid-area: f;
+}
+article>p{
+    text-align: justify;
+    font-size: 10px;
+    
+}
+article>h1{
+    font-size: 15px;
+}
+article>img{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+article>li{
+    list-style-type: square;
+}
+.kocka{ background-color: rgb(126, 123, 123);}
+header{
+    background-image: url(kepek/game.jpg);
+    background-size: cover;
+
+    height: 300px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(24, 22, 22);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color:orangered;
+  }
+  
+  .active {
+    background-color:orangered;
+  }
+  
+@media only screen and (max-width: 700px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas: "h"
+        "n"
+        "a"
+        "f";
+    
+    }
+  }
